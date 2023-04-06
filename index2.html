@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point and Click adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <h1 id="mainTitle"></h1>
+    <div id="gameWindow">
+        <div id="dialogueBar" class="foreground">
+            <div id="setMainDialog">
+                <img id="hero" class="foreground" src="img/portairt.png" alt="portrait">
+                <div id="mainCharacterSpeech" class="foreground speech-bubble">...</div>
+                <div id="counterSpeech" class="foreground speech-bubble">...</div>
+                <img id="counterCharacter" class="foreground" src="img/portairStatue.png" alt="The other person">
+                <div id="brownBar"></div>
+            </div>
+        </div>
+        <div id="inventoryBox" class="foreground">
+            <p>Inventory</p>
+            <ul id="inventoryList">
+            </ul>
+        </div>
+
+        <div id="door1" class="foreground"></div>
+        <div id="door2" class="foreground"></div>
+        <div id="statue" class="foreground"></div>
+        <div id="platformContainer" class="foreground">
+            <img id="platform" src="img/platform.png" alt="platform">
+        </div>
+        <div id="mainCharacter" class="character">
+            <img src="img/animated-character-1-idle.gif" alt="main character">
+        </div>
+        <div id="tilemap" class="background">
+            <img id="tilemapIMG" src="img/tilemap1.jpg" alt="tilemap 1">
+        </div>
+    </div>
+    <audio id="characterAudio">
+        <source src="audio/Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="audio/high pitch voice.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/index2.js"></script>
+</body>
+</html>

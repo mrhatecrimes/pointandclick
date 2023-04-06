@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>point and click adventure</title>
+    <link href="css/style3.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="mainTitle"></h1>
+    <div id="gameWindow">        <div id="dialogueBar" class="gameObject foreground">
+            <div id="dialogueContent">
+                <div id="brownBar" class="gameObject foreground"></div>
+
+                <img id="hero" class="gameObject foreground" src="img/portairt.png" alt="main character">
+                <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <img id="counterCharacter" class="gameObject foreground" src="img/portairStatue.png"
+                    alt="counter character">
+            </div>
+        </div>
+        <div id="door1" class="gameObject foreground"></div>
+        <div id="door2" class="gameObject foreground"></div>
+        <div id="statue" class="gameObject foreground"></div>
+        <div id="mainCharacter" class="gameObject character">
+            <img src="img/animated-character-1-idle.gif" alt="main character">
+        </div>
+        <div id="titlemap" class="gameObject background">
+            <img src="img/tilemap1.jpg" alt="tilemap">
+        </div>
+    </div>
+    <audio id="characterAudio">
+        <source src="audio/Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="audio/high pitch voice.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/index3.js"></script>
+</body>
+</html>
